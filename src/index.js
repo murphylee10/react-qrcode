@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+const Test = () => {
+  return (
+    <div className="container">
+      <div className="card">
+          <div className="img-cont">
+            <img src="./images/image-qr-code.png" alt="qr" />
+          </div>
+          <div className="header-cont">
+            <h2>Improve your front-end skills by building projects</h2>
+          </div>
+          <div className="para-cont">
+            <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
+          </div>
+      </div>
+    </div>
+  )
+}
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <Test />
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
